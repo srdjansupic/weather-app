@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.root{
+    padding-top: 42px;
+}
+.image{
+    background:url(https://raw.githubusercontent.com/TylerPottsDev/weather-react/master/src/assets/cold-bg.jpg);
+}
+.temp h2{
+    color: lightyellow;
+    filter: drop-shadow(2px 4px 1px black);
+}
+
+#search{
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 35px;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom:1px solid #262323;
+    padding-left: 10px;
+    height: 40px;
+    box-shadow: 3px 5px 2px #c1bbbb;
+    width:70%;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.none{
+    display: none;
+}
+
+.info-city{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.info-city p{
+font-size: 26px;
+margin: 0;
+margin-left: 10px;
+color: white;
+    filter: drop-shadow(2px 3px 1px #262323);
+}
+
+.info-city span{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.info-city h1{
+    margin:0;
+    color:white;
+    filter: drop-shadow(2px 3px 1px #262323);
+}
+.temp{
+    width: 242px;
+    height: 134px;
+    background: rgb(183 230 241 / 43%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 30px;
+    font-size: 40px;
+    box-shadow: 2px 2px 2px #3a3737;
+}
+.weather{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.min-max{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.min{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: rgb(183 230 241 / 43%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    margin-right: 20px;
+}
+.min p{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+    color:white;
+    filter: drop-shadow(2px 3px 1px #262323);
+}
+.max{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: rgb(183 230 241 / 43%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+.min span{
+    font-weight: 900;
+    color: rgb(0, 89, 255);
+}
+.max p{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+    color:white;
+    filter: drop-shadow(2px 3px 1px #262323);
+}
+.max span{
+    font-weight: 900;
+    color: red;
+}
+
+.sunny {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url(https://raw.githubusercontent.com/TylerPottsDev/weather-react/master/src/assets/warm-bg.jpg);
+    background-size: 50%;
+}
+.cold {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url(https://raw.githubusercontent.com/TylerPottsDev/weather-react/master/src/assets/cold-bg.jpg);
+    background-size: 50%;
+}
+
+@media screen and (max-width:700px){
+    .sunny {
+    background-size: 145%;
+     }
+     .cold {
+        background-size: 145%;
+         }
+}
